@@ -1,0 +1,101 @@
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=bb70ded0e4f7
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten] db version v3.6.23
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten] modules: none
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten] build environment:
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten]     distarch: aarch64
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten]     target_arch: aarch64
+2025-03-26T03:46:40.279+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+2025-03-26T03:46:40.281+0000 I STORAGE  [initandlisten] 
+2025-03-26T03:46:40.281+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2025-03-26T03:46:40.281+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2025-03-26T03:46:40.281+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3406M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2025-03-26T03:46:40.314+0000 I STORAGE  [initandlisten] WiredTiger message [1742960800:314014][1:0xffff97911000], txn-recover: Set global recovery timestamp: 0
+2025-03-26T03:46:40.338+0000 I CONTROL  [initandlisten] 
+2025-03-26T03:46:40.338+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-03-26T03:46:40.338+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-03-26T03:46:40.338+0000 I CONTROL  [initandlisten] 
+2025-03-26T03:46:40.338+0000 I CONTROL  [initandlisten] 
+2025-03-26T03:46:40.338+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2025-03-26T03:46:40.338+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2025-03-26T03:46:40.338+0000 I CONTROL  [initandlisten] 
+2025-03-26T03:46:40.338+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 30a5613a-e1a6-4c6e-af03-4cff54835929
+2025-03-26T03:46:40.344+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2025-03-26T03:46:40.344+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: b50a18e9-eb97-43de-9d9e-81a4f9c400b1
+2025-03-26T03:46:40.358+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2025-03-26T03:46:40.359+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+2025-03-26T03:46:40.359+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+2025-03-26T03:46:40.359+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2025-03-26T03:46:40.359+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: ac8caa7d-0bcd-4ac1-aca7-9ef01f9d95f3
+2025-03-26T03:46:40.364+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2025-03-26T03:46:40.364+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-03-26T03:46:40.365+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2025-03-26T03:46:45.360+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52990 #1 (1 connection now open)
+2025-03-26T03:46:45.361+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:52990 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:46:45.363+0000 I NETWORK  [conn1] end connection 127.0.0.1:52990 (0 connections now open)
+2025-03-26T03:46:46.225+0000 I NETWORK  [listener] connection accepted from 172.21.0.3:54318 #2 (1 connection now open)
+2025-03-26T03:46:46.227+0000 I NETWORK  [conn2] received client metadata from 172.21.0.3:54318 conn2: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "arm64", version: "6.12.5-linuxkit" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+2025-03-26T03:46:55.465+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38012 #3 (2 connections now open)
+2025-03-26T03:46:55.465+0000 I NETWORK  [conn3] received client metadata from 127.0.0.1:38012 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:46:55.467+0000 I NETWORK  [conn3] end connection 127.0.0.1:38012 (1 connection now open)
+2025-03-26T03:47:05.564+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:58902 #4 (2 connections now open)
+2025-03-26T03:47:05.564+0000 I NETWORK  [conn4] received client metadata from 127.0.0.1:58902 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:47:05.566+0000 I NETWORK  [conn4] end connection 127.0.0.1:58902 (1 connection now open)
+2025-03-26T03:47:15.653+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57146 #5 (2 connections now open)
+2025-03-26T03:47:15.653+0000 I NETWORK  [conn5] received client metadata from 127.0.0.1:57146 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:47:15.655+0000 I NETWORK  [conn5] end connection 127.0.0.1:57146 (1 connection now open)
+2025-03-26T03:47:20.025+0000 I STORAGE  [conn2] createCollection: accumulator.documents with generated UUID: 1c40d769-cde3-4f05-9084-1b157c9a0295
+2025-03-26T03:47:25.747+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:55450 #6 (2 connections now open)
+2025-03-26T03:47:25.747+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:55450 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:47:25.749+0000 I NETWORK  [conn6] end connection 127.0.0.1:55450 (1 connection now open)
+2025-03-26T03:47:35.859+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:43264 #7 (2 connections now open)
+2025-03-26T03:47:35.859+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:43264 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:47:35.862+0000 I NETWORK  [conn7] end connection 127.0.0.1:43264 (1 connection now open)
+2025-03-26T03:47:45.940+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:37040 #8 (2 connections now open)
+2025-03-26T03:47:45.941+0000 I NETWORK  [conn8] received client metadata from 127.0.0.1:37040 conn8: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:47:45.943+0000 I NETWORK  [conn8] end connection 127.0.0.1:37040 (1 connection now open)
+2025-03-26T03:47:56.047+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:43032 #9 (2 connections now open)
+2025-03-26T03:47:56.047+0000 I NETWORK  [conn9] received client metadata from 127.0.0.1:43032 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:47:56.049+0000 I NETWORK  [conn9] end connection 127.0.0.1:43032 (1 connection now open)
+2025-03-26T03:48:06.145+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:57226 #10 (2 connections now open)
+2025-03-26T03:48:06.146+0000 I NETWORK  [conn10] received client metadata from 127.0.0.1:57226 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:48:06.148+0000 I NETWORK  [conn10] end connection 127.0.0.1:57226 (1 connection now open)
+2025-03-26T03:48:16.263+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:52412 #11 (2 connections now open)
+2025-03-26T03:48:16.264+0000 I NETWORK  [conn11] received client metadata from 127.0.0.1:52412 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:48:16.266+0000 I NETWORK  [conn11] end connection 127.0.0.1:52412 (1 connection now open)
+2025-03-26T03:48:26.364+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:51196 #12 (2 connections now open)
+2025-03-26T03:48:26.364+0000 I NETWORK  [conn12] received client metadata from 127.0.0.1:51196 conn12: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:48:26.366+0000 I NETWORK  [conn12] end connection 127.0.0.1:51196 (1 connection now open)
+2025-03-26T03:48:36.462+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:60332 #13 (2 connections now open)
+2025-03-26T03:48:36.463+0000 I NETWORK  [conn13] received client metadata from 127.0.0.1:60332 conn13: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:48:36.465+0000 I NETWORK  [conn13] end connection 127.0.0.1:60332 (1 connection now open)
+2025-03-26T03:48:46.554+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38864 #14 (2 connections now open)
+2025-03-26T03:48:46.555+0000 I NETWORK  [conn14] received client metadata from 127.0.0.1:38864 conn14: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:48:46.558+0000 I NETWORK  [conn14] end connection 127.0.0.1:38864 (1 connection now open)
+2025-03-26T03:48:56.676+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:34930 #15 (2 connections now open)
+2025-03-26T03:48:56.676+0000 I NETWORK  [conn15] received client metadata from 127.0.0.1:34930 conn15: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:48:56.679+0000 I NETWORK  [conn15] end connection 127.0.0.1:34930 (1 connection now open)
+2025-03-26T03:49:06.798+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53388 #16 (2 connections now open)
+2025-03-26T03:49:06.798+0000 I NETWORK  [conn16] received client metadata from 127.0.0.1:53388 conn16: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:49:06.800+0000 I NETWORK  [conn16] end connection 127.0.0.1:53388 (1 connection now open)
+2025-03-26T03:49:16.895+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:60848 #17 (2 connections now open)
+2025-03-26T03:49:16.896+0000 I NETWORK  [conn17] received client metadata from 127.0.0.1:60848 conn17: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:49:16.898+0000 I NETWORK  [conn17] end connection 127.0.0.1:60848 (1 connection now open)
+2025-03-26T03:49:26.972+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:50778 #18 (2 connections now open)
+2025-03-26T03:49:26.972+0000 I NETWORK  [conn18] received client metadata from 127.0.0.1:50778 conn18: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:49:26.974+0000 I NETWORK  [conn18] end connection 127.0.0.1:50778 (1 connection now open)
+2025-03-26T03:49:37.068+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:60884 #19 (2 connections now open)
+2025-03-26T03:49:37.068+0000 I NETWORK  [conn19] received client metadata from 127.0.0.1:60884 conn19: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:49:37.071+0000 I NETWORK  [conn19] end connection 127.0.0.1:60884 (1 connection now open)
+2025-03-26T03:49:47.169+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:60536 #20 (2 connections now open)
+2025-03-26T03:49:47.170+0000 I NETWORK  [conn20] received client metadata from 127.0.0.1:60536 conn20: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:49:47.172+0000 I NETWORK  [conn20] end connection 127.0.0.1:60536 (1 connection now open)
+2025-03-26T03:49:57.260+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:43334 #21 (2 connections now open)
+2025-03-26T03:49:57.260+0000 I NETWORK  [conn21] received client metadata from 127.0.0.1:43334 conn21: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:49:57.263+0000 I NETWORK  [conn21] end connection 127.0.0.1:43334 (1 connection now open)
+2025-03-26T03:50:07.355+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:36136 #22 (2 connections now open)
+2025-03-26T03:50:07.355+0000 I NETWORK  [conn22] received client metadata from 127.0.0.1:36136 conn22: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "aarch64", version: "16.04" } }
+2025-03-26T03:50:07.357+0000 I NETWORK  [conn22] end connection 127.0.0.1:36136 (1 connection now open)

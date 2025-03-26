@@ -1,0 +1,28 @@
+
+> docker-software-delivery@1.0.0 start /app
+> node ./bin/www
+
+NODE_ENV: production
+Connected to database
+[0mGET / [32m200 [0m127.770 ms - 785[0m
+[0mGET /javascripts/dist/dist.min.js [32m200 [0m2.329 ms - 186999[0m
+[0mGET /stylesheets/style.css [32m200 [0m18.783 ms - 519[0m
+[0mGET /api [32m200 [0m2.984 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m4.790 ms - 270[0m
+[0mPOST /api [32m201 [0m30.608 ms - 52[0m
+[0mPOST /api [32m201 [0m8.495 ms - 52[0m
+[0mPOST /api [32m201 [0m9.636 ms - 57[0m
+[0mPOST /api [32m201 [0m2.668 ms - 57[0m
+[0mGET / [36m304 [0m2.410 ms - -[0m
+[0mGET /javascripts/dist/dist.min.js [36m304 [0m2.905 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m6.907 ms - -[0m
+[0mGET /api [32m200 [0m2.780 ms - 223[0m
+[0mGET / [36m304 [0m2.795 ms - -[0m
+[0mGET /javascripts/dist/dist.min.js [36m304 [0m1.090 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.833 ms - -[0m
+[0mGET /api [36m304 [0m4.557 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.067 ms - -[0m
+[0mGET / [36m304 [0m1.218 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.772 ms - -[0m
+[0mGET /javascripts/dist/dist.min.js [36m304 [0m0.564 ms - -[0m
+[0mGET /api [36m304 [0m2.549 ms - -[0m

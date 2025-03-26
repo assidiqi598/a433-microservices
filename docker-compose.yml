@@ -1,0 +1,35 @@
+# Define docker compose version
+version: '3.9'
+
+# Define services
+services:
+  # Define item-app service
+  item-app:
+    image: ghcr.io/assidiqi598/item-app:v1 # Use image which was pushed
+    ports:
+      - "80:8080" # Map host port 80 to container port 8080
+    restart: always
+    depends_on:
+      # Set rule that item-db should be run first before this service
+      item-db:
+        condition: service_healthy # Set condition that item-db should be healthy
+
+  # Define item-db service
+  item-db:
+    image: mongo:3 # Use image mongo:3
+    ports:
+      - "27017:27017" # Map host port 27017 to container port 27017
+    volumes:
+      - app-db:/data/db # Use volume app-db for persitent data
+    restart: always
+    healthcheck:
+      test: [ "CMD", "mongo", "--eval", "db.adminCommand('ping')" ] # Command to check mongodb health
+      interval: 10s # Set interval to run the command
+      timeout: 5s # Command fails if it takes more than 5 seconds
+      retries: 5 # Retries up to 5 times
+      start_period: 10s # Wait 10 seconds before the first check
+
+# Define volumes
+volumes:
+  # Define app-db volume
+  app-db:
